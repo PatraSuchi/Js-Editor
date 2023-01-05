@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/css/editor-styles.css">
+    <title>   Js Runner</title>
+    <link rel="icon" type="image/x-icon" href="https://miro.medium.com/max/720/1*LjR0UrFB2a__5h1DWqzstA.png">
+</head>
+
+<body bgcolor=rgb(222,250,255)>
+    
+    <div class="editor">
+        
+        <div class="editor__wrapper">
+            <div>
+                <div id="welcome"> Developed by Suchibrata Patra </div>
+            </div>
+            <div> 
+                
+                <ul class="editor__footer--left"  id="Top" >
+                
+                <li class="btn"> <button class="editor__btn editor__run">Run </button> </li>
+                <li class="btn"> <button class="editor__btn editor__reset">Reset </button></li>
+                <li class="btn"> <button class="editor__btn editor__reset" id="made_with_love">Enjoy 🥰 </button> </li>
+
+               </ul>
+            </div>
+            <div class="editor__body">
+                <div id="editorCode" class="editor__code"></div>
+            </div>
+            <div class="editor__footer">
+                
+                <div class="editor__footer--right">
+                    <div class="editor__console">
+                        <ul>
+                            <li> <button id="console" >Console</button> </li>                   
+                            <li class="editor__console-logs"> </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Required Ace Libraries -->
+    <script src="lib/js/ace-editor/src-min/ace.js"></script>
+    <script src="lib/js/ace-editor/src-min/mode-javascript.js"></script>
+    <script src="lib/js/ace-editor/src-min/ext-language_tools.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="lib/js/editor.js"></script>
+    <script src="lib/js/editor-console.js"></script>
+</body>
+
+</html>
