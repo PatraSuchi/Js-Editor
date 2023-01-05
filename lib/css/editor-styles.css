@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+:root {
+    --editor-bg:#ffffff;
+    --editor-border: #ffffff;
+}
+#welcome{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #c4cbd7;
+    padding-left: 60em;
+}
+
+#Top{
+    list-style:none;
+    margin-top: -33px;
+        overflow: auto;
+}
+.btn{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+/* Reset Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.editor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editor__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--editor-bg);
+    padding:5px 35px 30px 35px;
+    border-radius:0px;
+    border: 1px solid #25a8e4;
+}
+
+.editor__body {
+    flex: 1;
+}
+
+.editor__footer {
+    display: flex;
+}
+
+.editor__footer--left {
+    display: flex;
+}
+
+.editor__footer--right {
+    flex: 1;
+    margin-left: 9px;
+  
+}
+#made_with_love{
+    border: 0;
+    padding: .5em;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(107, 107, 107);
+    border-radius: 4px;
+    width: 120px;
+    cursor: pointer;
+}
+#made_with_love:hover{
+    background-color: rgb(241, 241, 241);
+}
+#console{
+    background-color: #0556f3;
+    border: 3px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-size: 0.8em;
+}
+
+
+
+.editor__btn {
+    border: 0;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(107, 107, 107);
+    border-radius: 4px;
+    margin-top: 1em;
+    width: 100px;
+    cursor: pointer;
+}
+.editor__btn:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.editor__console {
+    background-color:#f5f5f5;
+    width: 100%;
+    height: 180px;
+    margin-top: .9em;
+    border: 1px solid var(--editor-border);
+    overflow: auto;
+}
+#console_header{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    align-items: center;
+    background-color: #000;
+    border: #000;
+}
+
+.editor__code {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    border: 1px solid var(--editor-border);
+}
+
+/* Editor Console Logs */
+.editor__console-logs {
+    padding: 10px;
+    list-style: none;
+}
+
+.editor__console-logs li pre {
+    font-size: .9em;
+    font-family: Inconsolata, sans-serif;
+}
+
+.ace_gutter {
+    border-left: 7px solid var(--editor-border);
+}
+
+.log--default {
+    color: #000;
+}
+
+.log--string {
+    color: #2c7306;
+}
+
+.log--number {
+    color: #235b05;
+}
+
+.log--boolean {
+    color: blue;
+}
+
+.log--undefined {
+    color: grey;
+}
+
+.log--error {
+    color: red;
+}
+
+.log--object {
+    color: darkcyan;
+}
+
+.log--array {
+    color: rgb(255, 184, 71);
+}
+
+.log--function {
+    color: yellow;
+}
