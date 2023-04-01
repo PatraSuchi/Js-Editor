@@ -9,7 +9,13 @@
 
 <url>
   <loc>https://littlejerry.netlify.app/</loc>
-  <lastmod>2023-01-05T05:28:49+00:00</lastmod>
+  <lastmod>2023-04-01T05:40:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://littlejerry.netlify.app/console.html</loc>
+  <lastmod>2023-04-01T05:40:24+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
